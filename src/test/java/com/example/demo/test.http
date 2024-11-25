@@ -1,0 +1,29 @@
+GET http://localhost:8080/api/flower
+
+###
+POST http://localhost:8080/api/flower
+Content-Type: application/json
+
+{
+  "sepalLength": 100,
+  "mame": "rose",
+  "color": "blue",
+  "price": 100,
+  "available": true
+}
+
+###
+GET http://localhost:8080/api/user
+
+###
+POST http://localhost:8080/api/user
+Content-Type: application/json
+
+{
+  "age": 18,
+  "dob": "06.04.2006",
+  "email": "jenia.kravchuk@gmail.com"
+}
+
+### 
+GET http://localhost:8080/api/user/findByEmail?email=hui@gmail.com
